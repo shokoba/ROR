@@ -1,0 +1,17 @@
+<h1>I'm a webpage hear me roar!! </h1>
+<p>Grrrrrrrr   <%= @time %></p>
+<p>
+Say <a href="/say/goodbye" >Goodbye</a>!
+</p>
+
+<p>
+Time to say
+<%= link_to "Goodbye!" , say_goodbye_path %>
+</p>
+
+
+<% for room in @rooms %>
+<p>
+	Room <%= link_to  room  , say_goodbye_path %>
+</p>
+	<% end %>
